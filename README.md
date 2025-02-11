@@ -5,12 +5,16 @@
 Доступен следующий функционал:
 <br/><br/>
 `/orders` - страница просмотра всех имеющихся заказов с выводом стола, общей стоимости заказа и его статуса
+<br/><img src="https://github.com/user-attachments/assets/4775fb6c-5d9b-4119-bbb6-437612b670e0" alt="image" width="600" height="300"><br/>
 <br/><br/>
 `orders/create` - страница создания заказа
+<br/><img src="https://github.com/user-attachments/assets/1673ba41-e6ec-4de5-95b1-21f9edb164e8" alt="image" width="200" height="200"><br/>
 <br/><br/>
 `orders/delete` - страница удаления заказа
+<br/><img src="https://github.com/user-attachments/assets/ca3c3678-7294-4ce3-b1c9-3036c4156f8b" alt="image" width="300" height="200"><br/>
 <br/><br/>
 `orders/revenue` - страница подсчета выручки от оплаченных заказов
+<br/><img src="https://github.com/user-attachments/assets/cbb92123-cdf6-4d6a-bcc7-904940a3a7ae" alt="image" width="400" height="200"><br/>
 <br/><br/>
 Примеры запросов к API
 1. Получение списка всех заказов
@@ -207,10 +211,11 @@
 curl -sSL https://install.python-poetry.org | python3 -
 ```
 2. Клонировать себе проект
-<br/>
+
 ```
 git clone git@github.com:al-ov73/cafe-orders.git
 ```
+
 3. Развернуть локально СУБД Postgres и создать в ней базу данных
 ```
 CREATE DATABASE cafe_orders;
@@ -218,7 +223,7 @@ CREATE DATABASE cafe_orders;
 
 4. Установить зависимости
 ```
-Poetry install
+poetry install
 ```
 
 5. Запустить проект (автоматически применятся миграции)
