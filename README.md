@@ -220,13 +220,23 @@ git clone git@github.com:al-ov73/cafe-orders.git
 ```
 CREATE DATABASE cafe_orders;
 ```
+4. Заполнить файл с сектерами .env<br/><br/>
+Пример:
+```
+SECRET_KEY="SECRET"
+DB_HOST='localhost'
+DB_NAME='cafe_orders'
+DB_USER='postgres'
+DB_PASSWORD='postgres'
+DB_PORT='5432'
+```
 
-4. Установить зависимости
+5. Установить зависимости
 ```
 poetry install
 ```
 
-5. Запустить проект (автоматически применятся миграции)
+6. Запустить проект (автоматически применятся миграции)
 ```
 make start
 ```
